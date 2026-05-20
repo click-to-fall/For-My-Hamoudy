@@ -16,7 +16,8 @@
 
 body{
     background:#111;
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:auto;
     color:white;
 }
 
@@ -25,10 +26,10 @@ body{
     min-height:100vh;
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
     padding:20px;
+    overflow-y:auto;
 }
-
 .card{
     width:100%;
     max-width:430px;
@@ -129,6 +130,8 @@ button{
 #firstPage{
     display:none;
     animation:fade .5s ease;
+    padding-bottom:120px;
+
 }
 
 #passwordPage{
@@ -384,7 +387,7 @@ Go Back
 
 </div>
 
-<button class="back" onclick="goBack()">
+<button class="back" onclick="goBack()" style="display:block; margin:30px auto 0; position:relative; z-index:9999;">
 Go Back
 </button>
 
